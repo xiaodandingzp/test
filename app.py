@@ -53,6 +53,8 @@ def products():
 def wechat_login():
     """微信登录接口"""
     data = request.get_json()
+    # 打印data日志
+    print("wechat_login  data: ", data)
     code = data.get('code')
     appid = data.get('appid')
 
