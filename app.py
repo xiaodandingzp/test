@@ -105,6 +105,7 @@ def get_userinfo():
     """获取用户信息接口"""
     # 从请求头中获取 token
     token = request.headers.get('Authorization')
+    print("get_userinfo  token: ", token)
 
     if not token:
         return jsonify({})
