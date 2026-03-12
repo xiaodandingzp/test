@@ -45,7 +45,10 @@ def index():
 def products():
     return jsonify([
         {"name": "商品一", "price": 10},
-        {"name": "商品二", "price": 20}
+        {"name": "商品二", "price": 20},
+        {"name": "商品三", "price": 30},
+        {"name": "商品四", "price": 40},
+        {"name": "商品五", "price": 50}
     ])
 
 
